@@ -21,8 +21,3 @@ def hsv_to_rgb(hue, saturation, value):
 #returns a complementary color (+180 degrees) given a hsv color
 def complementary_color(hue, saturation, value):
     return (hue + 0.5) % 1.0 , saturation, value
-
-#TODO: Generalize conversion of bytes to colors
-#evaluation of a byte of the file to a 3 byte reprentation
-def byte_to_rgb(byte_in):
-    return bytes(hsv_to_rgb(byte_in / 255, 0.7, 0.7))

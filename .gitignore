@@ -1,2 +1,4 @@
 /tests/results
+/tests/build
+/build
 /__pycache__
